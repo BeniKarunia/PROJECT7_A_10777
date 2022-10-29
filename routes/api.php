@@ -24,4 +24,10 @@ Route::group(['middleware'=> 'auth:api'], function () {
     Route::put('product/{id}','Api\ProductController@update');
     Route::delete('product/{id}','Api\ProductController@destroy');
 
+    Route::get('employee','Api\EmployeeController@index');
+    Route::get('employee/{id}','Api\EmployeeController@show');
+    Route::post('employee','Api\EmployeeController@store');
+    Route::put('employee/{id}','Api\EmployeeController@update');
+    Route::delete('employee/{id}','Api\EmployeeController@destroy');
+
     });
