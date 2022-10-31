@@ -9,6 +9,7 @@ use Validator;
 use App\Models\Employee;
 
 class EmployeeController extends Controller
+
 {
     public function index()
     {
